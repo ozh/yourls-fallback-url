@@ -16,6 +16,7 @@ function dp_fallback_url() {
         // Get value from database
         $fallback_url = yourls_get_option( 'fallback_url' );
 	yourls_redirect( $fallback_url, 302 ); //Use a temporal redirect in case there is a valid keyword in the future
+	exit();
 }
 
 // Register our plugin config page
